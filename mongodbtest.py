@@ -16,7 +16,7 @@ def mongo_connect(url):
 
 
 # conn = mongo_connect(MONGODB_URI)
-conn = mongo_connect("mongodb+srv://InvAdrian:Iambutts1985@myfirstcluster-e8a5p.mongodb.net/myTestDB?retryWrites=true&w=majority")
+conn = mongo_connect("mongodb+srv://InvAdrian:xxxxxxxxxx@myfirstcluster-e8a5p.mongodb.net/myTestDB?retryWrites=true&w=majority")
 
 coll = conn[DBS_NAME][COLLECTION_NAME]
 
