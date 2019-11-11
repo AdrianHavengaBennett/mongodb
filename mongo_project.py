@@ -1,7 +1,7 @@
 import pymongo
-# import os
+import os
 
-# MONGODB_URI = os.getenv("MONGO_URI")
+MONGODB_URI = os.getenv("MONGO_URI")
 DBS_NAME = "myTestDB"
 COLLECTION_NAME = "myFirstMDB"
 
@@ -134,7 +134,7 @@ def main_loop():
         print("")
 
 
-conn = mongo_connect("mongodb+srv://InvAdrian:xxxxxxxxxxxx@myfirstcluster-e8a5p.mongodb.net/myTestDB?retryWrites=true&w=majority")
+conn = mongo_connect(MONGODB_URI)
 
 coll = conn[DBS_NAME][COLLECTION_NAME]
 
